@@ -1,0 +1,38 @@
+services:
+  db:
+    image: postgres:16
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: "2109"
+      POSTGRES_DB: clinica
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./backend/DB/banco.sql:/docker-entrypoint-initdb.d/banco.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      retries: 5
+
+  backend:
+    build: ./backend
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      DB_USER: postgres
+      DB_PASSWORD: "2109"
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_NAME: clinica
+      PORT: 3000
+    volumes:
+      - ./public:/public:ro
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  pgdata:

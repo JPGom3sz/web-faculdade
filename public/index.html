@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clínica  | Agende sua consulta</title>
+<meta name="description" content="Marque consultas de clínico geral, nutrição e cardiologia em poucos passos, com confirmação imediata.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
+<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<header class="home-nav">
+  <a href="index.html" class="home-nav-logo">
+  <img src="assets/clinica-ceub-logo-header.png" alt="Clínica Ceub" style="height: 40px;">
+</a>
+
+  <nav class="home-nav-links" id="home-nav-links">
+    <a href="#especialidades">Especialidades</a>
+    <a href="#corpo-clinico">Corpo clínico</a>
+    <a href="#sobre">Sobre nós</a>
+    <a href="#contato">Contato</a>
+    <a href="agendamento.html" class="home-nav-cta">Agendar consulta</a>
+  </nav>
+
+  <button class="home-nav-toggle" id="home-nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="home-hero">
+    <div class="home-hero-text">
+      <span class="eyebrow">Clínico geral &middot; Nutrição &middot; Cardiologia</span>
+      <h1>Marque sua consulta sem precisar esperar no telefone</h1>
+      <p class="home-hero-sub">Escolha a especialidade, o profissional e um horário disponível. A confirmação sai na hora, com um protocolo só seu.</p>
+      <div class="home-hero-actions">
+        <a href="../htmls\agendamento.html" class="btn-primary">Marcar consulta</a>
+        <a href="../htmls\agendamento.html#consulta" class="btn-ghost">Consultar meu agendamento</a>
+      </div>
+      <p class="home-hero-trust">Sem cadastro de senha. Basta o seu CPF para acompanhar tudo depois.</p>
+    </div>
+
+    <div class="home-hero-visual">
+      <!-- Substitua o link no 'src' abaixo pela sua imagem do Adobe Stock -->
+      <img src="assets\medica.jpeg" alt="Médico sorrindo em atendimento humanizado na Clínica Ceub" class="home-hero-image">
+      
+      <!-- Selo flutuante decorativo -->
+      <div class="hero-image-badge">
+        <span class="badge-icon">✦</span>
+        <span>Atendimento<br><strong>Humanizado</strong></span>
+      </div>
+    </div>
+  </section>
+
+ <!-- SOBRE NÓS -->
+  <section id="sobre" class="home-sobre-wrapper">
+    <div class="home-sobre-main">
+      <div class="sobre-images">
+        <!-- Imagem de trás (ex: fachada ou equipamento) -->
+        <img src="assets\ressonancia perto.jpeg" alt="Estrutura da clínica" class="img-back reveal">
+        <!-- Imagem da frente (ex: atendimento médico) -->
+        <img src="assets\medica e paciente quem somos.jpeg" alt="" class="img-front reveal">
+      </div>
+      
+      <div class="home-sobre-text reveal">
+        <span class="eyebrow eyebrow-light">Quem somos</span>
+        <h2>Cuidado próximo, do jeito que uma consulta deve ser</h2>
+        <p>A Clínica Ceub nasceu para tirar o agendamento médico da fila de espera do telefone. Reunimos clínico geral, nutrição e cardiologia num único portal, com horários reais e um protocolo próprio para cada consulta marcada.</p>
+        <p>Por trás de cada horário exibido na tela existe uma equipe que também atende presencialmente, pronta para esclarecer dúvidas sobre exames, convênios e encaminhamentos quando você precisar de mais do que uma tela.</p>
+        <a href="#contato" class="btn-outline-light">Saiba mais</a>
+      </div>
+    </div>
+    
+    <!-- FAIXA DE ESTATÍSTICAS HORIZONTAL -->
+    <div class="home-stats-banner">
+      <div class="home-stat reveal">
+        <div class="stat-value">+<span class="home-stat-num" data-count="3200">0</span></div>
+        <span>pacientes atendidos</span>
+      </div>
+      <div class="home-stat reveal">
+        <div class="stat-value">+<span class="home-stat-num" data-count="12">0</span></div>
+        <span>profissionais parceiros</span>
+      </div>
+      <div class="home-stat reveal">
+        <div class="stat-value">+<span class="home-stat-num" data-count="9">0</span></div>
+        <span>anos cuidando da comunidade</span>
+      </div>
+    </div>
+  </section>
+
+
+ 
+
+  <!-- COMO FUNCIONA -->
+  <section id="como-funciona" class="home-steps">
+    <div class="section-title-block">
+      <span class="eyebrow">Como funciona</span>
+      <h2>Da escolha ao protocolo, em quatro passos</h2>
+    </div>
+    <div class="home-steps-grid">
+      <div class="home-step">
+        <span class="num">01</span>
+        <h3>Especialidade e profissional</h3>
+        <p>Escolha a área desejada e o profissional com quem prefere ser atendido.</p>
+      </div>
+      <div class="home-step">
+        <span class="num">02</span>
+        <h3>Data e horário</h3>
+        <p>Veja os horários livres dos próximos dias úteis e escolha o que cabe na sua rotina.</p>
+      </div>
+      <div class="home-step">
+        <span class="num">03</span>
+        <h3>Seus dados</h3>
+        <p>Informe nome completo e CPF para identificar a sua consulta.</p>
+      </div>
+      <div class="home-step">
+        <span class="num">04</span>
+        <h3>Confirmação</h3>
+        <p>Receba um protocolo próprio, como um bilhete, para apresentar na recepção.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESPECIALIDADES -->
+  <section id="especialidades" class="home-especialidades">
+    <div class="section-title-block">
+      <span class="eyebrow">Especialidades</span>
+      <h2>Atendimento para diferentes momentos da sua saúde</h2>
+      
+    </div>
+    <div class="home-esp-grid">
+      <div class="home-esp-card">
+        <h3>Clínico geral</h3>
+        <p>Avaliação geral de saúde, acompanhamento de rotina e encaminhamento para especialistas quando necessário.</p>
+        <div class="botaoteste"> </div>
+      </div>
+      <div class="home-esp-card">
+        <h3>Nutrição</h3>
+        <p>Orientação alimentar personalizada, para quem busca mais equilíbrio no dia a dia.</p>
+        <div class="botaoteste"> </div>
+      </div>
+      <div class="home-esp-card">
+        <h3>Cardiologia</h3>
+        <p>Avaliação cardiovascular e acompanhamento para quem já tem ou quer prevenir problemas do coração.</p>
+        <div class="botaoteste"> </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORPO CLÍNICO -->
+  <section id="corpo-clinico" class="home-corpo">
+    <div class="section-title-block">
+      <span class="eyebrow">Corpo clínico</span>
+      <h2>Profissionais que já estão no seu agendamento</h2>
+    </div>
+    <div class="home-corpo-grid">
+      <div class="badge-card">
+        <span class="badge-punch"></span>
+        <span class="badge-avatar">CA</span>
+        <strong>Dr. Carlos Andrade</strong>
+        <span class="badge-tag">Clínico geral</span>
+      </div>
+      <div class="badge-card">
+        <span class="badge-punch"></span>
+        <span class="badge-avatar">FL</span>
+        <strong>Dra. Fernanda Lima</strong>
+        <span class="badge-tag">Clínico geral</span>
+      </div>
+      <div class="badge-card">
+        <span class="badge-punch"></span>
+        <span class="badge-avatar">BS</span>
+        <strong>Dra. Beatriz Souza</strong>
+        <span class="badge-tag">Nutrição</span>
+      </div>
+      <div class="badge-card">
+        <span class="badge-punch"></span>
+        <span class="badge-avatar">RN</span>
+        <strong>Dr. Rafael Nunes</strong>
+        <span class="badge-tag">Cardiologia</span>
+      </div>
+    </div>
+    <div class="home-corpo-cta">
+      <a href="agendamento.html" class="btn-primary">Ver horários disponíveis</a>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="home-contato">
+    <div class="home-contato-text">
+      <span class="eyebrow">Contato</span>
+      <h2>Prefere falar com a recepção antes de agendar?</h2>
+      <p>Nossa equipe também atende presencialmente durante o horário de funcionamento, para dúvidas sobre exames, convênios e encaminhamentos.</p>
+      <a href="agendamento.html" class="btn-primary">Marcar consulta agora</a>
+    </div>
+    <div class="ticket home-contato-card">
+     <div class="ticket home-contato-card">
+      <div class="stub-top">
+        <div class="field-row"><span>Atendimento</span><span>Segunda a sexta</span></div>
+        <div class="field-row"><span>Horário</span><span>08h às 18h</span></div>
+        <div class="field-row"><span>Telefone</span><span>(61) 3333-4455</span></div>
+      </div>
+      <div class="divider"></div>
+      
+      <!-- Seção inferior do ticket atualizada com o mapa -->
+      <div class="stub-bottom home-contato-address">
+        <div class="protocol" style="width: 100%;">
+          Localização
+          <!-- Iframe do Google Maps sem endereço específico -->
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122841.45561044458!2d-48.01633538466632!3d-15.792576922912443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3d18df9ae275%3A0x738470e469754a24!2sBras%C3%ADlia%2C%20DF!5e0!3m2!1spt-BR!2sbr!4v1714578500000!5m2!1spt-BR!2sbr" 
+            width="100%" 
+            height="220" 
+            style="border:0; border-radius: 12px; margin-top: 12px;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  
+
+  <!-- CTA FINAL -->
+  <section class="home-cta-final">
+    <div class="home-cta-final-text">
+      <h2>Pronto para marcar sua consulta?</h2>
+      <p>Leva menos de dois minutos, do início ao protocolo.</p>
+    </div>
+    <a href="agendamento.html" class="btn-primary btn-on-dark">Começar agendamento</a>
+  </section>
+
+
+  
+
+</main>
+
+<a href="agendamento.html" class="floating-ticket" aria-label="Agendar consulta agora">
+  <span class="floating-ticket-notch"></span>
+  Agendar<br>consulta
+</a>
+
+<!-- NOVO FOOTER PREMIUM -->
+<footer class="home-footer-premium">
+  <div class="footer-main">
+    
+    <!-- Coluna 1: Marca -->
+    <div class="footer-brand">
+      <a href="index.html" class="home-nav-logo">
+  <img src="assets\logo_clinica_ceub_transparente.png" alt="Clínica Ceub" style="height: 40px;">
+</a>
+      <p>Cuidado próximo, do jeito que uma consulta deveria ser. Agendamento digital sem filas de espera.</p>
+    </div>
+    
+    <!-- Coluna 2: Navegação -->
+    <div class="footer-links">
+      <h4>Navegação</h4>
+      <a href="#especialidades">Especialidades</a>
+      <a href="#corpo-clinico">Corpo clínico</a>
+      <a href="#sobre">Quem somos</a>
+      <a href="#como-funciona">Como funciona</a>
+    </div>
+    
+    <!-- Coluna 3: Contato Rápido -->
+    <div class="footer-contact">
+      <h4>Atendimento</h4>
+      <p>Segunda a sexta, 08h às 18h</p>
+      <p><strong>(xx) *****-****</strong></p>
+      <p class="address">xxx xxx xxxxxxx, xxx, xxxxxx xxx xxxxxx</p>
+    </div>
+    
+  </div>
+  
+  <!-- Barra Inferior -->
+  <div class="footer-bottom">
+    <div class="footer-copy">
+      &copy; 2026 Clínica Ceub. Todos os direitos reservados.
+    </div>
+    <div class="footer-note">
+      Modo de demonstração: aguardando backend em <span class="mono">/api</span>
+    </div>
+  </div>
+</footer>
+<script src="script/home.js"></script>
+
+</body>
+</html>

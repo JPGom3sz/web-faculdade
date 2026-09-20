@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agendamento | Clínica</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style\style_agendamento.css">
+</head>
+<body>
+
+<div class="site-bar">
+  <a class="site-bar-logo" href="../index.html">Clínica Raiz</a>
+  <a class="site-bar-back" href="../index.html">&larr; Página inicial</a>
+</div>
+
+<header class="top">
+  <div class="eyebrow"> Portal de agendamento</div>
+  <h1>Marque sua consulta</h1>
+  <p>Escolha a especialidade, o profissional e um horário disponível.</p>
+</header>
+
+<nav class="tabs">
+  <button id="tab-novo" class="active">Novo agendamento</button>
+  <button id="tab-consulta">Consultar por CPF</button>
+</nav>
+
+<main>
+
+  <!-- FLUXO DE NOVO AGENDAMENTO -->
+  <section id="view-novo">
+    <div class="steps">
+      <div class="seg done" id="seg1"></div>
+      <div class="seg" id="seg2"></div>
+      <div class="seg" id="seg3"></div>
+      <div class="seg" id="seg4"></div>
+    </div>
+
+    <div class="card">
+
+      
+      <div id="step-1">
+        <div class="section-title"><span class="num">01</span><h2>Especialidade e profissional</h2></div>
+        <div class="grid-choice" id="lista-especialidades"></div>
+        <div class="grid-choice" id="lista-profissionais"></div>
+        <div class="actions">
+          <span></span>
+          <button class="primary" id="btn-step1-next" disabled>Continuar</button>
+        </div>
+      </div>
+
+      <!-- Passo 2 -->
+      <div id="step-2" class="hidden">
+        <div class="section-title"><span class="num">02</span><h2>Data e horário</h2></div>
+        <div class="slots" id="lista-datas"></div>
+        <div class="slots" id="lista-horarios"></div>
+        <div class="actions">
+          <button class="ghost" id="btn-step2-back">Voltar</button>
+          <button class="primary" id="btn-step2-next" disabled>Continuar</button>
+        </div>
+      </div>
+
+      <!-- Passo 3 -->
+      <div id="step-3" class="hidden">
+        <div class="section-title"><span class="num">03</span><h2>Seus dados</h2></div>
+
+        <label for="input-nome">Nome completo</label>
+        <input type="text" id="input-nome" placeholder="Ex.: Maria da Silva">
+        <label for="input-cpf">CPF (somente números)</label>
+        <input type="text" id="input-cpf" placeholder="000.000.000-00" maxlength="11">
+        <label for ="input-nascimento"> Data de nascimento</label>
+        <input type="date" id="input-nascimento">
+        <label for="input-telefone"> Telefone (Somente números) </label>
+        <input type="text" id="input-telefone" placeholder="6199998888" maxlength="11">
+
+        <div class="actions">
+          <button class="ghost" id="btn-step3-back">Voltar</button>
+          <button class="primary" id="btn-step3-next" disabled>Confirmar agendamento</button>
+        </div>
+      </div>
+
+      <!-- Passo 4: confirmação -->
+      <div id="step-4" class="hidden">
+        <div class="section-title"><span class="num">04</span><h2>Confirmação</h2></div>
+        <div class="ticket">
+          <div class="stub-top">
+            <span class="stamp">Confirmado</span>
+            <div class="field-row"><span>Paciente</span><span id="tk-nome"></span></div>
+            <div class="field-row"><span>Especialidade</span><span id="tk-especialidade"></span></div>
+            <div class="field-row"><span>Profissional</span><span id="tk-profissional"></span></div>
+            <div class="field-row"><span>Data</span><span id="tk-data"></span></div>
+            <div class="field-row"><span>Horário</span><span id="tk-hora"></span></div>
+          </div>
+          <div class="divider"></div>
+          <div class="stub-bottom">
+            <div class="protocol">Protocolo<strong class="mono" id="tk-protocolo"></strong></div>
+            <button class="ghost" id="btn-novo-agendamento">Novo agendamento</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONSULTA POR CPF -->
+  <section id="view-consulta" class="hidden">
+    <div class="card">
+      <div class="section-title"><h2>Consultar agendamentos</h2></div>
+      <div class="search-row">
+        <input type="text" id="input-cpf-busca" placeholder="Digite o CPF (somente números)" maxlength="11">
+        <button class="primary" id="btn-buscar-cpf">Buscar</button>
+      </div>
+      <div id="resultado-busca"></div>
+    </div>
+  </section>
+
+</main>
+
+
+
+<script src="../script/script.js"></script>
+
+</body>
+</html>
